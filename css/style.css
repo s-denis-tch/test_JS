@@ -1,0 +1,121 @@
+.title {
+	font-size: 3em;
+	color: rgba(90, 102, 242, 1);
+}
+
+.date{
+margin-top: 0.5em !important; 
+width: 80px;
+height: 80px;
+background: rgba(90, 102, 242, 1);
+box-shadow: 1px -1px 5px rgba(0, 0, 0, 0.5);
+color: white;
+}
+
+.date__text{
+	padding: 0;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: 700;
+}
+#cards{
+	width: 16vw;
+	height: auto;
+	background-color: rgba(222,4,4,0.7);
+	margin-top: 1.5em; 
+	margin-bottom: 1.5em;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	font-size: 0.8em;
+	transition: 0.2s;
+	padding-top: 1em;
+	padding-bottom: 2em;
+}
+#cards p, h3{
+	padding: 0;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+#cards:hover{
+	width: 17vw;
+	transition: 0.3s;
+}
+.add,
+.add__two,
+.add__three{
+	width: 15vw;
+	height: 100px;
+	background: url(../add.png) 50% center no-repeat;
+	opacity: 0.4;
+	margin-bottom: 2em;
+	transition: 0.2s;
+}
+
+.add:hover,.add__two:hover,.add__three:hover{
+	width: 16vw;
+	opacity: 1;
+	transform: scale(1.15);
+	transition: 0.2s;
+	cursor: pointer;
+}
+.aligner{
+	text-align: center;
+	margin: 0 auto;
+}
+@media only screen and (orientation: landscape) and (max-width : 768px) {
+	#cards{
+		width: 23vw;
+		height: 80px;
+		font-size: 0.5em;
+	}
+	.title {
+	font-size: 2em;
+}
+	#cards:hover{
+		width: 24vw;
+		height: 85px;
+	}
+	.add,
+	.add__two,
+	.add__three{
+		width: 23vw;
+		height: 80px;
+	}
+	.add:hover,.add__two:hover,.add__three:hover{
+		width: 24vw;
+		height: 85px;
+	}
+}
+@media only screen and (max-width : 480px) {
+	.title {
+	font-size: 1.5em;
+}
+.date{
+width: 50px;
+height: 50px;
+}
+
+.date__text{
+	font-size: 1.1em;
+}
+	#cards{
+		width: 23vw;
+		height: 80px;
+		font-size: 0.5em;
+	}
+	#cards:hover{
+		width: 24vw;
+		height: 85px;
+	}
+	.add,
+	.add__two,
+	.add__three{
+		width: 23vw;
+		height: 80px;
+	}
+	.add:hover,.add__two:hover,.add__three:hover{
+		width: 24vw;
+		height: 85px;
+	}
+}
